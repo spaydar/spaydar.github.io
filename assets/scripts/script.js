@@ -1,8 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-Barba.Pjax.init();
-Barba.Prefetch.init();
-Barba.Pjax.start();
-var FadeTransition = Barba.BaseTransition.extend({
+  var lastElementClicked;
+
+
+  Barba.Pjax.init();
+  Barba.Prefetch.init();
+
+  Barba.Dispatcher.on('linkClicked', function(el) {
+    lastElementClicked = el;
+  });
+
+  var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
     /**
      * This function is automatically called as soon the Transition starts
@@ -64,4 +71,5 @@ Barba.Pjax.getTransition = function() {
 
   return FadeTransition;
 };
+
 });
