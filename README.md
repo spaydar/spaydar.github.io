@@ -28,7 +28,7 @@ an increased experience of the action and its speed, also implemented with keyfr
 with a home button, with similar feedback to the landing page buttons, that lead the user back to the home page to select another 
 action for Prank to perform.
 
-PS -- I made all of the cartoon images from scratch in Illustrator :)
+PS -- I made all of the cartoon images from scratch in Adobe Illustrator :)
 
 Thanks for reading!!
 
